@@ -4,14 +4,12 @@ function App() {
 
    return (
       <>
-         <div
-            className="
+         <div className="
             flex justify-center 
             w-full h-screen
             px-9
             bg-main_background
-         "
-         >
+         ">
             <Sample />
          </div>
       </>

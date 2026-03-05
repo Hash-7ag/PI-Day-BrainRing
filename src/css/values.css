@@ -1,5 +1,5 @@
 * {
-   @apply text-lg font-sans text-primary
+   @apply text-lg font-sans text-primary-900
 }
 
 .def-flex {
@@ -19,4 +19,16 @@
    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+
+.def-button {
+   @apply w-28 h-12 rounded-xl hover:scale-105 transition-all
+}
+
+.def-button-red {
+   @apply bg-accent hover:bg-accent-500 text-accent-50
+}
+
+.def-button-blue {
+   @apply bg-secondary hover:bg-secondary-500 text-main_background
 }

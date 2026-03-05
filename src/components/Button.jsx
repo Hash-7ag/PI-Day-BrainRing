@@ -5,12 +5,13 @@ function Button({ onClick }) {
       <div
          onClick={onClick}
          className='
-         px-36 py-5 rounded-2xl
-         flex justify-center items-center text-center
-         bg-secondary hover:bg-secondary-500  transition-all scale-105
-         text-main_background
-         cursor-pointer
-      '>
+            px-36 py-5 rounded-2xl
+            flex justify-center items-center text-center 
+            transition-all scale-105
+            cursor-pointer
+            def-button-blue
+         '
+      >
          Button
       </div>
    )

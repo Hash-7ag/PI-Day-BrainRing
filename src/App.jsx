@@ -1,19 +1,21 @@
+import Sample from "./pages/Sample"
 
 function App() {
 
-  return (
-    <>
-      <div 
-         className="
+   return (
+      <>
+         <div
+            className="
             flex justify-center 
             w-full h-screen
-            px-9 py-6
+            px-9
+            bg-main_background
          "
-      >
-         <h1 className="text-2xl">Home</h1>
-      </div>
-    </>
-  )
+         >
+            <Sample />
+         </div>
+      </>
+   )
 }
 
 export default App

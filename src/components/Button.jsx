@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button({ onClick }) {
+function Button({ onClick, title }) {
    return (
       <div
          onClick={onClick}
@@ -12,7 +12,7 @@ function Button({ onClick }) {
             def-button-blue
          '
       >
-         Button
+         {title}
       </div>
    )
 }

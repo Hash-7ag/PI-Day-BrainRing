@@ -1,7 +1,7 @@
 import React from 'react'
 import QuestionBlock from './QuestionBlock'
 
-function QuestionPanel({ panelVisibility, onClick }) {
+function QuestionPanel({ panelVisibility, onClick, question }) {
 
    return (
       <>
@@ -10,7 +10,7 @@ function QuestionPanel({ panelVisibility, onClick }) {
                ?
                <div className='block  
                   z-10 absolute m-0 p-0 w-full h-full bg-secondary/40'>
-                  <QuestionBlock onClick={onClick} />
+                  <QuestionBlock activeQuestion={question} onClick={onClick} />
                </div>
                :
                <div className='hidden'></div>

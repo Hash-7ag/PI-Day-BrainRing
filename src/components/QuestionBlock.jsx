@@ -1,13 +1,13 @@
 import React from 'react'
 
-function QuestionBlock({ onClick }) {
+function QuestionBlock({ onClick, activeQuestion }) {
 
 
 
    return (
       <div className='def-flex-col w-full h-screen gap-8'>
          <div className='def-flex w-96 h-36 rounded-3xl bg-main_background def-shadow'>
-            Question
+            {activeQuestion.question}
          </div>
 
          <div className='def-flex gap-7'>

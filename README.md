@@ -1,1 +1,1 @@
-## Tools: React + Vite + React Router DOM + TailwindCSS + GSAP
+# Tools: React + Vite + React Router DOM + TailwindCSS + GSAP + clsx

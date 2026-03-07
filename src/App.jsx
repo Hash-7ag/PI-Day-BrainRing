@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Sample from "./pages/Sample"
+import Card from "./tests/Card"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
          <Routes>
             <Route path="/" element={<Sample />} />
             <Route path="/:pageId" element={<Sample />} />
+            <Route path="/test-1" element={<Card />} />
          </Routes>
       </div>
    )

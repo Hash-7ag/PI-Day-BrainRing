@@ -10,6 +10,29 @@ function Sample() {
    const page = pages[pageId] || pages.first; // Fallback to first 
 
    const [panelVisibility, setPanelVisibility] = useState(false);
+<<<<<<< Updated upstream
+=======
+   const [activeQuestion, setActiveQuestion] = useState(null);
+
+   const clickButton = (buttonId) => {
+      const index = questions.findIndex(q => q.id === buttonId);
+
+      if (!questions[index].isQuestionOpened) {
+         const newQuestions = [...questions];
+         newQuestions[index] = {
+            ...newQuestions[index],
+            isQuestionOpened: true
+         }
+
+         setQuestions(newQuestions);
+         setActiveQuestion(newQuestions[index]);
+         setPanelVisibility(true);
+      }
+      else {
+         alert("This button is opened before!");
+      }
+   }
+>>>>>>> Stashed changes
 
    return (
       <div className='flex flex-col items-center gap-3'>
@@ -21,7 +44,15 @@ function Sample() {
                ))
             }
          </div>
+<<<<<<< Updated upstream
          <QuestionPanel panelVisibility={panelVisibility} onClick={() => setPanelVisibility(!panelVisibility)} />
+=======
+         <QuestionPanel
+            panelVisibility={panelVisibility}
+            question={activeQuestion}
+            onClick={() => setPanelVisibility(false)}
+         />
+>>>>>>> Stashed changes
       </div>
    )
 }

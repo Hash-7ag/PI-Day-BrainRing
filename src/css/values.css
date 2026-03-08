@@ -31,4 +31,11 @@
 
 .def-button-blue {
    @apply bg-secondary hover:bg-secondary-500 text-main_background
+<<<<<<< Updated upstream
+=======
+}
+
+.backface-hidden {
+   backface-visibility: hidden;
+>>>>>>> Stashed changes
 }

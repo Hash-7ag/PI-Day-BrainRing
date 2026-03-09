@@ -34,7 +34,7 @@ function QuestionBlock({ onClick, activeQuestion }) {
             >
                {/* Front */}
                <div className="
-                 rounded-3xl bg-main_background def-shadow
+                 rounded-3xl bg-main_background text-primary-900 def-shadow
                  px-20 py-12 box-border
                  def-flex
                  backface-hidden
@@ -45,7 +45,7 @@ function QuestionBlock({ onClick, activeQuestion }) {
                {/* Back */}
                <div
                   className="
-                    rounded-3xl bg-main_background def-shadow
+                    rounded-3xl bg-main_background text-primary-900 def-shadow
                     absolute inset-0
                     px-20 py-12 box-border
                     def-flex

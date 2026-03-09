@@ -1,5 +1,5 @@
 * {
-   @apply text-lg font-sans text-primary-900
+   @apply text-lg font-sans text-white
 }
 
 .def-flex {
@@ -21,6 +21,10 @@
    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
 
+.backface-hidden {
+   backface-visibility: hidden;
+}
+
 .def-button {
    @apply w-28 h-12 rounded-xl hover:scale-105 transition-all
 }
@@ -30,9 +34,9 @@
 }
 
 .def-button-blue {
-   @apply bg-secondary hover:bg-secondary-500 text-main_background
+   @apply bg-secondary hover:bg-secondary-500 text-white
 }
 
-.backface-hidden {
-   backface-visibility: hidden;
+.def-move-button {
+   @apply p-3 hover:scale-105 transition-transform rounded-2xl cursor-pointer
 }

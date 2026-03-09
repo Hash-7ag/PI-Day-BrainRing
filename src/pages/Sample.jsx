@@ -3,6 +3,7 @@ import Button from '../components/Button'
 import QuestionPanel from '../components/QuestionPanel'
 import { useParams } from 'react-router-dom';
 import { pages } from '../data/content'
+import TopicSwitcher from '../components/TopicSwitcher';
 
 function Sample() {
 
@@ -34,7 +35,7 @@ function Sample() {
 
    return (
       <div className='flex flex-col items-center gap-3'>
-         <h1 className="text-3xl font-bold mt-3">{page.title}</h1>
+         <h1 className="text-3xl font-bold mt-3 text-primary-900">{page.title}</h1>
          <div className='grid grid-cols-2 grid-rows-5 grid-flow-col gap-x-8 gap-y-5'>
             {
                questions.map((button) => (
@@ -46,6 +47,9 @@ function Sample() {
                   />
                ))
             }
+         </div>
+         <div>
+            <TopicSwitcher pageId={pageId} pages={pages} />
          </div>
          <QuestionPanel
             panelVisibility={panelVisibility}

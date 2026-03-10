@@ -1,15 +1,16 @@
-import { Route, Routes, useLocation } from "react-router-dom"
-import Sample from "./pages/Sample"
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import Sample from './pages/Sample';
 
 function App() {
    const location = useLocation();
    return (
-      <div className="flex justify-center w-full h-screen px-9 bg-main_background">
-         <Routes>
-            <Route path="/:pageId" element={<Sample key={location.pathname} />} />
+      <AnimatePresence mode="wait">
+         <Routes location={location} key={location.pathname}>
+            <Route path="/:pageId" element={<Sample />} />
          </Routes>
-      </div>
-   )
+      </AnimatePresence>
+   );
 }
 
 export default App

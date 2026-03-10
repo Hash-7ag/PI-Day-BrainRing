@@ -16,16 +16,16 @@ function TopicSwitcher({ pageId, pages }) {
          : "";
 
    const switchTopic = (switchDirection) => {
-
       if (switchDirection === "next") {
-         topicClass == "last" ? alert("This is last topic")
-            : navigate(`/${keys[currentIndex + 1]}`);
+         topicClass == "last"
+            ? alert("This is last topic")
+            : navigate(`/${keys[currentIndex + 1]}`, { state: { switchDirection: 'forward' } });
+      } else if (switchDirection === "back") {
+         topicClass == "first"
+            ? alert("This is first topic")
+            : navigate(`/${keys[currentIndex - 1]}`, { state: { switchDirection: 'back' } });
       }
-      else if (switchDirection === "back") {
-         topicClass == "first" ? alert("This is first topic")
-            : navigate(`/${keys[currentIndex - 1]}`);
-      }
-   }
+   };
 
    return (
       <div className='w-44 h-16 flex justify-around items-center'>

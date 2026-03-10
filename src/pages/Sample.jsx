@@ -14,6 +14,10 @@ function Sample() {
    const [panelVisibility, setPanelVisibility] = useState(false);
    const [activeQuestion, setActiveQuestion] = useState(null);
 
+   const closePanel = () => {
+      setPanelVisibility(false);
+   };
+
    const clickButton = (buttonId) => {
       const index = questions.findIndex(q => q.id === buttonId);
 
@@ -34,8 +38,8 @@ function Sample() {
    }
 
    return (
-      <div className='flex flex-col items-center gap-3'>
-         <h1 className="text-3xl font-bold mt-3 text-primary-900">{page.title}</h1>
+      <div className='flex flex-col justify-center items-center gap-3'>
+         <h1 className="select-none  text-3xl font-bold text-primary-900">{page.title}</h1>
          <div className='grid grid-cols-2 grid-rows-5 grid-flow-col gap-x-8 gap-y-5'>
             {
                questions.map((button) => (
@@ -54,7 +58,7 @@ function Sample() {
          <QuestionPanel
             panelVisibility={panelVisibility}
             question={activeQuestion}
-            onClick={() => setPanelVisibility(false)}
+            onClick={closePanel}
          />
       </div>
    )

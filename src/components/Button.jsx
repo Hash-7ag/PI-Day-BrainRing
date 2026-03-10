@@ -7,7 +7,7 @@ function Button({ onClick, title, isQuestionOpened }) {
       <div
          onClick={onClick}
          className={clsx(
-            'px-36 py-5 rounded-2xl flex justify-center items-center text-center transition-all scale-105 hover:scale-[1.07] cursor-pointer',
+            'select-none px-36 py-5 rounded-2xl flex justify-center items-center text-center transition-all scale-105 hover:scale-[1.07] cursor-pointer',
             !isQuestionOpened ? 'def-button-blue' : 'def-button-red')}
       >
          {title}

@@ -1,10 +1,18 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-function QuestionBlock({ onClick, activeQuestion }) {
+function QuestionBlock({ onClick, activeQuestion, isVisible }) {
 
    const cardRef = useRef(null);
    const flipped = useRef(false);
+
+   useEffect(() => {
+      if (isVisible && cardRef.current) {
+         // Сбрасываем трансформацию
+         gsap.set(cardRef.current, { rotateY: 0, rotateX: 0, z: 0 });
+         flipped.current = false;
+      }
+   }, [isVisible]);
 
    const handleFlip = () => {
       if (!flipped.current) {

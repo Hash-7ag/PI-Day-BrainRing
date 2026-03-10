@@ -47,7 +47,7 @@ function Sample() {
          transition={{ duration: 0.3 }}
          className="flex flex-col justify-center items-center gap-3"
       >
-         <div className='flex flex-col justify-center items-center gap-3'>
+         <div className='w-full h-screen flex flex-col justify-center items-center gap-3'>
             <h1 className="select-none  text-3xl font-bold text-primary-900">{page.title}</h1>
             <div className='grid grid-cols-2 grid-rows-5 grid-flow-col gap-x-8 gap-y-5'>
                {

@@ -158,7 +158,7 @@ export const pages = {
       {
         id: 1,
         questionBlockTitle: "Question 1",
-        question: "Third: Question number 1?",
+        question: "/img/third/1.jpeg",
         answer: "Answer number 1",
         isQuestionOpened: false,
       },
@@ -241,7 +241,7 @@ export const pages = {
       {
         id: 2,
         questionBlockTitle: "Question 2",
-        question: "Fourth: Question number 2?",
+        question: "/img/fourth/2.jpeg",
         answer: "Answer number 2",
         isQuestionOpened: false,
       },
